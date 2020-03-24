@@ -53,7 +53,7 @@ public function __construct(NameRepository \$repository)
 }
 ```
 
-    b.  **Một số phương thức**
+   b.  **Một số phương thức**
 
 -   Đọc tất cả record trong bảng: \$this-\>repository-\>all();
 
@@ -71,17 +71,13 @@ public function __construct(NameRepository \$repository)
 -   Xóa một dòng: 
 > \$this-\>repository-\>delete( \$id );
 
-    c.  **Tìm hiểu Criteria**
-
-        i.  **Criteria là gì?**
+   c.  **Tìm hiểu Criteria**
 
 Trong quá trình đọc hoặc tìm kiếm các record trong bảng, tuy packet này đã cung cấp các method để hỗ trợ. Tuy nhiên, một số truy vấn sẽ có điều kiện khá phức tạp khó để áp dụng được các phương thức sẵn có.
 
 Criteria sẽ hỗ trợ thêm người dùng thực hiện các truy vấn phức tạp bằng việc tự động áp dụng một số điều kiện nhất định khi truy vấn mà chúng ta đã định nghĩa trong quá lúc chúng ta truy vấn.
 
 Criteria hỗ trợ chúng ta có thể áp dụng một hay nhiều điều kiện thêm nếu cần thiết.
-
-        ii. **Triển khai Criteria**
 
 -   Chạy lệnh để tạo một criteria
 > php artisan make:criteria ten-criteria

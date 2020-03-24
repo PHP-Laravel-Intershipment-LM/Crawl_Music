@@ -2,7 +2,7 @@
 
 1)  **API là gì?**
 
-API -- Application Programming Interface, giao thức kết nối với các thư
+API - Application Programming Interface, giao thức kết nối với các thư
 viện và các ứng dụng khác. API cung cấp khả năng truy xuất đến một số
 tập hàm hay dùng giúp trao đổi dữ liệu giữa các ứng dụng.
 
@@ -84,17 +84,18 @@ với Create, Read, Update, Delete -- Tạo, Đọc, Sửa, Xóa.
 
 > Route::ten\_phuong\_thuc('url/{param\_1}/{param\_2}/\...', 'Ten\_Controller\@Ten\_method')
 
-    Trong đó có chứa Controller và phương thức của nó sẽ được gọi khi người dùng request đến url này. Các param nếu có sẽ được tự động truyền vào như là một đối số của phương thức đó.
+    
+   Trong đó có chứa Controller và phương thức của nó sẽ được gọi khi người dùng request đến url này. Các param nếu có sẽ được tự động truyền vào như là một đối số của phương thức đó.
 
-    b.  **Xây dựng các controller để xử lý**
+   b.  **Xây dựng các controller để xử lý**
 
-    Như trong cú pháp cấu hình url có chứa controller và phương thức, ta xây dựng các Controller và các phương thức tương tự. Các controller có thể xây dựng trước sau đó cấu hình url cũng được.
+   Như trong cú pháp cấu hình url có chứa controller và phương thức, ta xây dựng các Controller và các phương thức tương tự. Các controller có thể xây dựng trước sau đó cấu hình url cũng được.
 
-    Để tạo Controller trong Laravel, người dùng có thể dùng lệnh
+   Để tạo Controller trong Laravel, người dùng có thể dùng lệnh
 > php artisan make:controller ten\_controller
 
-    Sau khi tạo controller xong, tiến hành xây dựng các phương thức tương ứng đã gọi trong route. Lưu ý, các phương thức này phải có đối số mặc định là Request \$request. Ngoài ra, tùy vào route có param hay không mà khai báo các phương thức theo cho đúng.
+   Sau khi tạo controller xong, tiến hành xây dựng các phương thức tương ứng đã gọi trong route. Lưu ý, các phương thức này phải có đối số mặc định là Request \$request. Ngoài ra, tùy vào route có param hay không mà khai báo các phương thức theo cho đúng.
 
-    Quá trình xử lý của các phương thức xong, thông thường api sẽ trả về dữ liệu dạng json. Người dùng có thể trả về bằng phương thức
+   Quá trình xử lý của các phương thức xong, thông thường api sẽ trả về dữ liệu dạng json. Người dùng có thể trả về bằng phương thức
 
 > response()-\>json(data\_array).
