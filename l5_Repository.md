@@ -30,8 +30,8 @@
 
 -   Thêm property public timestamps cho entity (window), cho model (linux), thuộc tính này quy định có kèm theo thời gian chỉnh sửa dữ liệu trong lúc thao tác với bảng mà model đó trỏ tới hay không
 
--   Tạo các repository cho các model bằng lệnh 
-> php artisan make:repository ten-model
+-   Tạo các repository, entity cho các model bằng lệnh, nhấn y để cho phép cài đặt (nếu đã có rồi có thể chọn n để bỏ qua)
+> php artisan make:entity ten-model
 
 -   Binding interface với repository bằng lệnh 
 > php artisan make:bindings ten-model
