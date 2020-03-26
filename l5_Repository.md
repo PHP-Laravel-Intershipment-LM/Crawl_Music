@@ -36,9 +36,6 @@
 -   Binding interface với repository bằng lệnh 
 > php artisan make:bindings ten-model
 
--   Tạo entity cho các model vừa tạo bằng lệnh 
-> php artisan make:entity ten-model
-
 -   Thêm property fillable cho entity (window) và cho model (linux), thuộc tính này là một mảng các cột quy định danh sách các cột có thể truy xuất tới bảng đó.
 
 -   Thêm vào file _app\\Providers\\AppServiceProvider.php_, phương thức _boot_ dòng
