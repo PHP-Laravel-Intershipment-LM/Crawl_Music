@@ -28,7 +28,7 @@
 
 -   Thêm property protected table cho model, thuộc tính này quy định tên của bảng mà model trỏ tới
 
--   Thêm property public timestamps cho entity (window), cho model (linux), thuộc tính này quy định có kèm theo thời gian chỉnh sửa dữ liệu trong lúc thao tác với bảng mà model đó trỏ tới hay không
+-   Thêm property public timestamps cho entity và model, thuộc tính này quy định có kèm theo thời gian chỉnh sửa dữ liệu trong lúc thao tác với bảng mà model đó trỏ tới hay không
 
 -   Tạo các repository, entity cho các model bằng lệnh, nhấn y để cho phép cài đặt (nếu đã có rồi có thể chọn n để bỏ qua)
 > php artisan make:entity ten-model
